@@ -2,6 +2,8 @@
 
 **A free website editor for Windows.** Build pages visually, work with their source, and keep your website in ordinary files. Built by [Ravitz Computers](https://ravitzcomputers.com).
 
+**Download:** [Windows installer](https://github.com/Ravitz-Computers/webbit/releases/download/v0.1.0-beta.1/Webbit-Beta-1-Setup.exe) · [All downloads](https://github.com/Ravitz-Computers/webbit/releases/latest)
+
 Webbit started as a fun side project with help from AI. Core editing is free: no subscription, account or required cloud or AI service. Optional services such as live Google Reviews may have their own costs.
 
 > **Beta 1.** The editor and Windows packages build and pass automated checks. [STATUS.md](STATUS.md) records what has been checked and what remains unfinished. Clean-PC installation and independent review of the generated manager still need testing.
