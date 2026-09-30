@@ -1,0 +1,63 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Webbit",
+  "version": "0.1.0",
+  "identifier": "com.ravitzcomputers.webbit",
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "pnpm build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "Webbit \u2014 Ravitz Computers",
+        "width": 1440,
+        "height": 900,
+        "minWidth": 900,
+        "minHeight": 600
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' data:; media-src 'self' data:; font-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; frame-src 'self' blob: data:; connect-src ipc: http://ipc.localhost"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": [
+      "nsis"
+    ],
+    "windows": {
+      "nsis": {
+        "installMode": "perMachine",
+        "installerIcon": "icons/icon.ico",
+        "uninstallerIcon": "icons/icon.ico",
+        "sidebarImage": "../installer/sidebar.bmp",
+        "headerImage": "../installer/header.bmp",
+        "uninstallerHeaderImage": "../installer/header.bmp",
+        "installerHooks": "../installer/appearance.nsh"
+      },
+      "webviewInstallMode": {
+        "type": "downloadBootstrapper"
+      }
+    },
+    "resources": {
+      "../licenses/": "licenses/",
+      "../THIRD-PARTY-NOTICES.md": "THIRD-PARTY-NOTICES.md",
+      "../help/": "help/",
+      "../PROPRIETARY-ASSETS.md": "PROPRIETARY-ASSETS.md",
+      "../LICENSE": "LICENSE",
+      "../installer/LICENSES.txt": "LICENSES.txt"
+    },
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/icon.ico"
+    ],
+    "publisher": "Ravitz Computers",
+    "copyright": "Copyright 2026 Ravitz Computers",
+    "shortDescription": "Visual website builder with editable source",
+    "licenseFile": "../installer/LICENSES.txt"
+  }
+}

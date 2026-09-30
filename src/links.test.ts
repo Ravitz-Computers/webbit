@@ -1,0 +1,8 @@
+import {it,expect} from 'vitest';
+import {linkDestination} from './links';
+const files={'index.html':'','about.html':'','pages/contact.html':'','services/index.html':'','dashboard.php':''};
+it('opens relative and root-relative pages inside the project',()=>{expect(linkDestination(files,'pages/contact.html','../about.html?from=contact#hours')).toEqual({kind:'page',path:'about.html',hash:'#hours'});expect(linkDestination(files,'pages/contact.html','/index.html')).toEqual({kind:'page',path:'index.html',hash:''});});
+it('resolves directory and extensionless page links',()=>{expect(linkDestination(files,'index.html','/services/').kind).toBe('page');expect(linkDestination(files,'index.html','/about')).toEqual({kind:'page',path:'about.html',hash:''});expect(linkDestination(files,'index.html','/dashboard')).toEqual({kind:'page',path:'dashboard.php',hash:''});});
+it('keeps same-page fragment navigation inside the editor',()=>{expect(linkDestination(files,'about.html','#hours')).toEqual({kind:'page',path:'about.html',hash:'#hours'});});
+it('requires external web addresses to use the browser warning flow',()=>{expect(linkDestination(files,'index.html','https://example.com/about.html')).toEqual({kind:'external',url:'https://example.com/about.html'});expect(linkDestination(files,'index.html','//example.com')).toEqual({kind:'external',url:'https://example.com/'});});
+it('never executes special schemes, credentials, malformed escapes or missing local pages',()=>{for(const href of ['javascript:alert(1)','data:text/html,test','file:///C:/secret','mailto:a@example.com','https://user:pass@example.com','/no-page.html','/%FF.html','https://example.com/\n'])expect(linkDestination(files,'index.html',href).kind).toBe('unavailable');});

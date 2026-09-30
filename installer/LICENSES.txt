@@ -1,0 +1,34 @@
+﻿WEBBIT BETA 1 - LICENSES & ARTWORK
+
+Webbit source code is licensed under MIT. Vinny, Ravitz logos, medallion and branding are proprietary and excluded from MIT.
+
+MIT License
+
+Copyright (c) 2026 Ravitz Computers
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+PROPRIETARY ARTWORK
+
+# Ravitz Computers proprietary assets
+The MIT license for Webbit source code does not grant rights to Ravitz Computers trademarks, logos, the Vinny character, medallion, or related artwork. Those assets remain the property of Ravitz Computers and are used in Webbit with the owner's authorization.
+
+Included assets are copied unchanged from https://github.com/Ravitz-Computers/HARE at commit 41b5615d84825597d81f0dda5ee3859cda4aecd8. See assets/provenance.json for source paths and SHA-256 hashes. The inventory covers the five original PNGs and four original dark-theme SVGs (hello, investigating, love and logo-no-words) in public/hare. SVG paths, fills, gradients and viewBox are retained.
+
+assets/webbit-icon.svg places the full-detail logo-no-words vector in a padded, transparent square without stretching. src-tauri/icons contains application icons generated from that wrapper. These derived application icons retain the same proprietary artwork status. They are not available for unrelated third-party branding under Webbit's source license.
+
+HARE's LICENSE-NOTES.md identifies Vinny and the Ravitz medallion as Ravitz-owned artwork excluded from MIT. This notice records the user's authorization to incorporate their assets into Webbit; it grants no additional trademark or artwork rights to recipients.
+
+
+THIRD-PARTY SOFTWARE
+
+Third-party components retain their own licenses and copyright notices. The complete inventory is installed as THIRD-PARTY-NOTICES.md, with individual texts in the licenses folder. These are also included in the portable package and available through Help / About.
+
+Microsoft WebView2 is a separate Microsoft runtime with its own applicable terms. Setup checks for it and downloads it only if missing.

@@ -1,0 +1,21 @@
+[data-wb-component]{margin-block:2rem;padding:1.25rem;border:1px solid #8886;border-radius:12px}
+[data-wb-component] button,[data-wb-component] input{font:inherit;padding:.6rem .9rem;border:1px solid #8888;border-radius:6px;color:inherit;background:transparent}
+[data-wb-component] button{cursor:pointer}
+[data-wb-component] [role=tablist]{display:flex;gap:.5rem;flex-wrap:wrap}
+[data-wb-component] [aria-selected=true]{box-shadow:inset 0 -3px #7563d5}
+[data-wb-component] [data-wb-panel]{padding-block:1rem}
+[data-wb-component] [hidden]{display:none!important}
+[data-wb-component] img{max-width:100%;height:auto}
+[data-wb-component] summary{cursor:pointer;font-weight:700;padding:.7rem 0}
+[data-wb-component] table{border-collapse:collapse;width:100%;margin-top:1rem}
+[data-wb-component] th,[data-wb-component] td{padding:.7rem;text-align:left;border-bottom:1px solid #8886}
+.wb-table-scroll{overflow:auto}
+.wb-data-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:1rem}
+.wb-data-cards article{border:1px solid #8885;border-radius:8px;padding:1rem}
+.wb-pointer-light{inset:0;pointer-events:none;z-index:3;border-radius:inherit;opacity:0;transition:opacity .4s;background:radial-gradient(330px circle at var(--wb-x,50%) var(--wb-y,50%),#8b5cf633,transparent 70%),radial-gradient(460px circle at calc(var(--wb-x,50%) + 40px) calc(var(--wb-y,50%) + 20px),#14b8a62b,transparent 70%)}
+.wb-spotlight{background:radial-gradient(180px circle at var(--wb-x,50%) var(--wb-y,50%),#ffffff30,transparent 75%)}
+.wb-reveal-ready{opacity:.12;translate:0 18px;transition:opacity .6s,translate .6s}.wb-revealed{opacity:1;translate:0 0}
+/* WB_EFFECT_RULES */
+@keyframes wb-aurora{from{background-position:0% 50%}to{background-position:100% 50%}}
+@media(prefers-reduced-motion:reduce){[data-wb-fx],[data-wb-site-fx]{animation:none!important;transition:none!important;scroll-behavior:auto!important}.wb-pointer-light{display:none}.wb-reveal-ready{opacity:1;translate:none}}
+@media(pointer:coarse){.wb-pointer-light{display:none}}

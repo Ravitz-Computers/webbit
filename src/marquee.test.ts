@@ -1,0 +1,11 @@
+import {it,expect} from 'vitest';
+import {selectionBox,touchesBox,marqueeHits,type MarqueeCandidate} from './marquee';
+const item=(id:number,x:number,y:number,width=40,height=40,parent:number|null=null,group?:string):MarqueeCandidate=>({id,parent,box:{x,y,width,height},group});
+it('draws in all four directions',()=>{for(const end of [{x:80,y:80},{x:20,y:80},{x:80,y:20},{x:20,y:20}]){const r=selectionBox({x:50,y:50},end);expect(r.width).toBe(30);expect(r.height).toBe(30);expect(r.x).toBe(Math.min(50,end.x));expect(r.y).toBe(Math.min(50,end.y));}});
+it('selects partial intersections and edge touches, without requiring enclosure',()=>{const box={x:10,y:10,width:20,height:20};expect(touchesBox(box,{x:29,y:29,width:40,height:40})).toBe(true);expect(touchesBox(box,{x:30,y:10,width:40,height:40})).toBe(true);expect(touchesBox(box,{x:31,y:10,width:40,height:40})).toBe(false);expect(touchesBox(box,{x:10,y:10,width:0,height:0})).toBe(false);});
+it('selects independent touched objects and excludes distant ones',()=>{expect(marqueeHits([item(1,0,0),item(2,60,0),item(3,160,0)],{x:20,y:10,width:50,height:10})).toEqual([1,2]);});
+it('selects content instead of its partly touched enclosing wrapper',()=>{expect(marqueeHits([item(1,0,0,300,300),item(2,30,30,40,40,1),item(3,100,30,40,40,1)],{x:40,y:40,width:70,height:10})).toEqual([2,3]);});
+it('selects a fully enclosed container once, without its descendants',()=>{expect(marqueeHits([item(1,10,10,100,100),item(2,20,20,40,40,1)],{x:0,y:0,width:120,height:120})).toEqual([1]);});
+it('selects an empty container when its background is touched',()=>{expect(marqueeHits([item(1,0,0,300,300),item(2,30,30,40,40,1)],{x:200,y:200,width:20,height:20})).toEqual([1]);});
+it('includes saved group members even outside the rectangle',()=>{expect(marqueeHits([item(1,0,0,40,40,null,'g'),item(2,200,0,40,40,null,'g'),item(3,400,0)],{x:10,y:10,width:10,height:10})).toEqual([1,2]);});
+it('supports adding to existing selection without nested duplicates',()=>{expect(marqueeHits([item(1,0,0),item(2,100,0)],{x:110,y:10,width:10,height:10},[1])).toEqual([1,2]);expect(marqueeHits([item(1,0,0,300,300),item(2,30,30,40,40,1)],{x:40,y:40,width:10,height:10},[1])).toEqual([1]);});

@@ -1,0 +1,15 @@
+import {describe,it,expect} from 'vitest';
+import {editCanvasSelection} from './canvas-edit';
+import {sourceNodes} from './blocks';
+import {copyElements,pasteElements} from './element-clipboard';
+import {resizeGeometry,translationParts,keyboardNudge} from './resize-geometry';
+describe('grouping and anchored resize',()=>{
+ it('saves grouping without moving markup and supports ungroup',()=>{const source='<body><button>A</button><p>B</p></body>';const ids=sourceNodes(source).flatMap((n,i)=>['button','p'].includes(n.tagName)?[i]:[]);const result=editCanvasSelection(source,{kind:'group',ids});const nodes=sourceNodes(result.source);const groups=ids.map(id=>nodes[id].attrs.find(a=>a.name==='data-wb-group')?.value);expect(groups[0]).toBeTruthy();expect(groups[0]).toBe(groups[1]);expect(result.tokens).toHaveLength(2);expect(editCanvasSelection(result.source,{kind:'ungroup',ids}).source).not.toContain('data-wb-group');expect(result.source).not.toContain('position:');});
+ it('rejects grouping fewer than two independent roots',()=>{expect(()=>editCanvasSelection('<body><p>Test</p></body>',{kind:'group',ids:[3]})).toThrow();});
+ it('copied groups are independent of the originals',()=>{let source='<body><button>A</button><button>B</button></body>';const ids=sourceNodes(source).flatMap((n,i)=>n.tagName==='button'?[i]:[]);source=editCanvasSelection(source,{kind:'group',ids}).source;const clip=copyElements(source,'index.html',ids.map((id,i)=>({id,rect:{x:100*i,y:0,width:80,height:30}})));const pasted=pasteElements(source,'index.html',clip);const groups=sourceNodes(pasted.source).filter(n=>n.tagName==='button').map(n=>n.attrs.find(a=>a.name==='data-wb-group')?.value);expect(groups[0]).toBe(groups[1]);expect(groups[2]).toBe(groups[3]);expect(groups[2]).not.toBe(groups[0]);});
+ it('keeps the right edge fixed when dragging west in either direction',()=>{for(const dx of [-50,40,300]){const r=resizeGeometry(200,80,'w',dx,20,20);expect(r.x+r.width).toBe(200);expect(r.height).toBe(80);expect(r.y).toBe(0);expect(r.width).toBeGreaterThanOrEqual(20);}});
+ it('keeps the bottom-right corner fixed for northwest resize',()=>{const r=resizeGeometry(200,80,'nw',30,20);expect(r).toEqual({width:170,height:60,x:30,y:20});});
+ it('preserves whole CSS calc expressions when splitting translations',()=>{expect(translationParts('calc(50% + 10px) calc(20% - 5px)')).toEqual(['calc(50% + 10px)','calc(20% - 5px)']);expect(translationParts('none')).toEqual(['0px','0px']);});
+});
+
+it("requires Shift for nudging and uses Control for precision",()=>{for(const key of ["ArrowLeft","ArrowRight","ArrowUp","ArrowDown"]){expect(keyboardNudge(key,false,false)).toBeNull();expect(keyboardNudge(key,false,true)).toBeNull();const coarse=keyboardNudge(key,true,false)!;const fine=keyboardNudge(key,true,true)!;expect(Math.abs(coarse.dx)+Math.abs(coarse.dy)).toBe(5);expect(Math.abs(fine.dx)+Math.abs(fine.dy)).toBe(1);}expect(keyboardNudge("ArrowLeft",true,true)).toEqual({dx:-1,dy:0});expect(keyboardNudge("ArrowUp",true,false)).toEqual({dx:0,dy:-5});expect(keyboardNudge("ArrowRight",true,false,true)).toBeNull();});

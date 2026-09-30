@@ -1,0 +1,8 @@
+import {it,expect} from 'vitest';
+import {previewGeometry,previewStageSize} from './preview-zoom';
+it('magnifies without changing the CSS layout viewport',()=>{const normal=previewGeometry(1000,600,'desktop',100,'magnify',true),large=previewGeometry(1000,600,'desktop',200,'magnify',true);expect(large.frameWidth).toBe(normal.frameWidth);expect(large.frameHeight).toBe(normal.frameHeight);expect(large.paperWidth).toBe(normal.paperWidth*2);});
+it('browser zoom changes responsive CSS viewport while retaining display width',()=>{const normal=previewGeometry(1000,600,'desktop',100,'reflow',false),large=previewGeometry(1000,600,'desktop',200,'reflow',false);expect(large.frameWidth).toBe(500);expect(large.paperWidth).toBe(normal.paperWidth);expect(large.paperHeight).toBe(normal.paperHeight);});
+it('keeps phone and tablet targets separate from app UI scaling',()=>{expect(previewGeometry(1000,600,'phone',200,'magnify',false).frameWidth).toBe(390);expect(previewGeometry(1000,600,'tablet',200,'reflow',false).frameWidth).toBe(384);expect(previewGeometry(1000,600,'reading',100,'magnify',false).frameWidth).toBe(720);});
+
+it('fits fractional split-pane space without toggling scrollbars',()=>{const size=previewStageSize({width:464.35,height:418.6},{width:464,height:419},{width:449,height:419});expect(size).toEqual({width:449,height:418});const paper=previewGeometry(size.width,size.height,'desktop',100,'magnify',true);expect(paper.paperWidth).toBeLessThanOrEqual(size.width);expect(paper.paperHeight).toBeLessThanOrEqual(size.height);});
+it('subtracts real scrollbars at large preview magnifications',()=>{expect(previewStageSize({width:464.35,height:418.6},{width:464,height:419},{width:449,height:404})).toEqual({width:449,height:403});});

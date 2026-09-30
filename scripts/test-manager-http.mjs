@@ -1,0 +1,108 @@
+import fs from 'node:fs';
+import os from 'node:os';
+import path from 'node:path';
+import net from 'node:net';
+import {spawn} from 'node:child_process';
+import {createHash,createHmac} from 'node:crypto';
+import assert from 'node:assert/strict';
+import {fileURLToPath} from 'node:url';
+const repo=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const root=fs.mkdtempSync(path.join(os.tmpdir(),'webbit-http-'));
+const privateDir=path.join(root,'private'),publicDir=path.join(root,'public');
+fs.mkdirSync(privateDir,{mode:0o700});fs.mkdirSync(publicDir,{mode:0o700});
+const phpString=s=>`'${s.replaceAll('\\','\\\\').replaceAll("'","\\'")}'`;
+const source='<h1>Hello</h1><!--keep-->';
+fs.writeFileSync(path.join(publicDir,'index.html'),source);
+fs.writeFileSync(path.join(privateDir,'schema.json'),JSON.stringify({version:1,name:'Test site',fields:[{id:'title',label:'Heading',page:'index.html',kind:'text',value:'Hello'}],pages:[{path:'index.html',hash:createHash('sha256').update(source).digest('hex'),segments:['<h1>',{field:'title',initial:'Hello',original:'Hello'},'</h1><!--keep-->']}]}));
+const token='a'.repeat(64);
+fs.writeFileSync(path.join(privateDir,'bootstrap.json'),JSON.stringify({hash:createHash('sha256').update(token).digest('hex'),expires:Math.floor(Date.now()/1000)+3600}));
+// This TLS simulation exists only in the test router, never in exported runtime files.
+const router=path.join(root,'router.php');
+fs.writeFileSync(router,`<?php $_SERVER['HTTPS']='on'; if($_SERVER['REQUEST_URI']==='/bad-root'){$_SERVER['DOCUMENT_ROOT']=${phpString(root)};} require ${phpString(path.join(repo,'manager-runtime/src/Controller.php'))}; Webbit\\Manager\\Controller::run(${phpString(privateDir)},${phpString(publicDir)});`);
+const socket=net.createServer();await new Promise(resolve=>socket.listen(0,'127.0.0.1',resolve));const port=socket.address().port;await new Promise(resolve=>socket.close(resolve));
+const child=spawn(process.env.WEBBIT_PHP_BIN||'php',['-S',`127.0.0.1:${port}`,'-t',publicDir,router],{cwd:root,stdio:['ignore','ignore','pipe'],windowsHide:true});
+let serverLog='';child.stderr.on('data',data=>{serverLog+=data;});
+let cookie='',checks=0;
+const verify=(value,message)=>{assert.ok(value,message);checks++;};
+async function request(fields){
+  const response=await fetch(`http://127.0.0.1:${port}/`,{method:fields?'POST':'GET',headers:{...(cookie?{Cookie:cookie}:{}),...(fields?{'Content-Type':'application/x-www-form-urlencoded'}:{})},body:fields?new URLSearchParams(fields):undefined,redirect:'manual'});
+  const setCookie=response.headers.get('set-cookie');if(setCookie)cookie=setCookie.split(';')[0];
+  return {text:await response.text(),response};
+}
+const csrf=text=>{const match=text.match(/name="csrf" value="([a-f0-9]{64})"/);assert.ok(match,'CSRF field exists');return match[1];};
+function totp(secret){
+  let bits='';for(const c of secret)bits+='ABCDEFGHIJKLMNOPQRSTUVWXYZ234567'.indexOf(c).toString(2).padStart(5,'0');
+  const key=Buffer.from(bits.match(/.{8}/g).map(b=>parseInt(b,2)));
+  const counter=Buffer.alloc(8);counter.writeBigUInt64BE(BigInt(Math.floor(Date.now()/30000)));
+  const digest=createHmac('sha1',key).update(counter).digest(),offset=digest[19]&15;
+  return String((digest.readUInt32BE(offset)&0x7fffffff)%1000000).padStart(6,'0');
+}
+try{
+  let first;
+  for(let attempt=0;attempt<100;attempt++){try{first=await request();break;}catch{await new Promise(resolve=>setTimeout(resolve,50));}}
+  assert.ok(first,'PHP test server started');
+  const badRoot=await fetch(`http://127.0.0.1:${port}/bad-root`);
+  verify(badRoot.status===503,'Incorrect document root fails closed before manager routes');
+  verify(first.text.includes('Authorize local setup'),'Setup requires a local token');
+  verify(first.response.headers.get('content-security-policy').includes("frame-ancestors 'none'"),'Security headers applied');
+  verify(first.response.headers.get('set-cookie').includes('secure')&&first.response.headers.get('set-cookie').includes('HttpOnly'),'Secure HttpOnly session cookie');
+  let result=await request({action:'authorize-setup',csrf:csrf(first.text),token:'wrong'});
+  verify(!result.text.includes('enrollment-qr'),'Unknown setup token cannot access enrollment');
+  result=await request({action:'authorize-setup',csrf:csrf(result.text),token});
+  const secret=result.text.match(/<code>([A-Z2-7]{32})<\/code>/)?.[1];assert.ok(secret,'Local enrollment secret shown');
+  const password='Testing a long passphrase!';
+  result=await request({action:'initialize',csrf:csrf(result.text),username:'owner',password,factor:totp(secret)});
+  const codes=result.text.match(/[A-F0-9]{8}(?:-[A-F0-9]{8}){3}/g);
+  verify(codes?.length===10,'Recovery codes returned once after confirmed setup');
+  verify(!fs.existsSync(path.join(privateDir,'bootstrap.json')),'Bootstrap token removed after setup');
+  let anonymous=await request();verify(!anonymous.text.includes(codes[0]),'Refresh cannot redisplay recovery codes');
+  result=await request({action:'publish',csrf:csrf(anonymous.text),revision:'0','values[title]':'Unauthorized'});
+  verify(fs.readFileSync(path.join(publicDir,'index.html'),'utf8')===source,'Anonymous publish denied');
+  const beforeCookie=cookie;
+  result=await request({action:'login',csrf:csrf(result.text),username:'owner',password,factor:codes[0]});
+  verify(result.text.includes('Publish changes')&&cookie!==beforeCookie,'Login grants manager and rotates session');
+  result=await request({action:'publish',csrf:'0'.repeat(64),revision:'0','values[title]':'CSRF'});
+  verify(fs.readFileSync(path.join(publicDir,'index.html'),'utf8')===source,'Invalid CSRF cannot publish');
+  result=await request({action:'publish',csrf:csrf(result.text),revision:'0','values[title]':'<script>alert(1)</script>'});
+  verify(fs.readFileSync(path.join(publicDir,'index.html'),'utf8')==='<h1>&lt;script&gt;alert(1)&lt;/script&gt;</h1><!--keep-->','Authenticated field edit is encoded');
+  result=await request({action:'publish',csrf:csrf(result.text),revision:'0','values[title]':'Stale'});
+  verify(result.text.includes('Content changed in another session'),'Stale form conflict reported');
+  const firstSession=cookie;
+  cookie='';
+  let other=await request();
+  other=await request({action:'login',csrf:csrf(other.text),username:'owner',password,factor:codes[1]});
+  verify(other.text.includes('Publish changes'),'Second independent session can sign in');
+  const secondSession=cookie;
+  cookie=firstSession;
+  result=await request();
+  const newPassword='Changed long passphrase!';
+  result=await request({action:'change-password',csrf:csrf(result.text),password,factor:codes[2],next_password:newPassword});
+  verify(result.text.includes('Publish changes'),'Password change retains the verified current session');
+  const renewedSession=cookie;
+  cookie=secondSession;
+  other=await request();
+  verify(!other.text.includes('Publish changes'),'Password change revokes another existing session');
+  cookie=renewedSession;
+  result=await request();
+  result=await request({action:'rotate-recovery',csrf:csrf(result.text),password:newPassword,factor:codes[3]});
+  const replacementCodes=result.text.match(/[A-F0-9]{8}(?:-[A-F0-9]{8}){3}/g);
+  verify(replacementCodes?.length===10,'Recovery rotation returns a new batch once');
+  result=await request({action:'logout',csrf:csrf(result.text)});
+  verify(result.response.status===303,'Logout redirects');
+  result=await request();
+  verify(!result.text.includes('Publish changes'),'Logout removes authorization');
+  result=await request({action:'login',csrf:csrf(result.text),username:'owner',password,factor:codes[0]});
+  verify(!result.text.includes('Publish changes'),'Previously used recovery code cannot log in');
+  result=await request({action:'login',csrf:csrf(result.text),username:'owner',password:newPassword,factor:codes[4]});
+  verify(!result.text.includes('Publish changes'),'Unused old recovery codes are revoked after rotation');
+  result=await request({action:'login',csrf:csrf(result.text),username:'owner',password:newPassword,factor:replacementCodes[0]});
+  verify(result.text.includes('Publish changes'),'New password and replacement recovery code work together');
+  verify(!result.text.includes('Forgot your password?'),'Email reset controls stay absent when SMTP is disabled');
+  console.log(`Passed ${checks} HTTP manager checks (local TLS simulation).`);
+}finally{
+  child.kill();await new Promise(resolve=>{if(child.exitCode!==null)resolve();else child.once('exit',resolve);});
+  const resolved=fs.realpathSync(root);
+  if(resolved!==root&&!resolved.toLowerCase().endsWith(path.basename(root).toLowerCase()))throw new Error('Unexpected temporary path');
+  if(!path.basename(root).startsWith('webbit-http-'))throw new Error('Unsafe cleanup path');
+  fs.rmSync(root,{recursive:true,force:true});
+}

@@ -1,0 +1,2347 @@
+[
+  {
+    "kind": "cargo",
+    "name": "adler2",
+    "version": "2.0.1",
+    "license": "0BSD OR MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-adler2-2.0.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "aho-corasick",
+    "version": "1.1.5",
+    "license": "Unlicense OR MIT",
+    "file": "licenses/dependencies/cargo-aho-corasick-1.1.5.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "alloc-no-stdlib",
+    "version": "2.0.4",
+    "license": "BSD-3-Clause",
+    "file": "licenses/dependencies/cargo-alloc-no-stdlib-2.0.4.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "alloc-stdlib",
+    "version": "0.2.4",
+    "license": "BSD-3-Clause",
+    "file": "licenses/dependencies/cargo-alloc-stdlib-0.2.4.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "anyhow",
+    "version": "1.0.104",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-anyhow-1.0.104.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "atomic-waker",
+    "version": "1.1.2",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-atomic-waker-1.1.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "autocfg",
+    "version": "1.5.1",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-autocfg-1.5.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "base64",
+    "version": "0.22.1",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-base64-0.22.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "base64",
+    "version": "0.23.1",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-base64-0.23.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "bit-set",
+    "version": "0.8.0",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-bit-set-0.8.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "bit-vec",
+    "version": "0.8.0",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-bit-vec-0.8.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "bitflags",
+    "version": "1.3.2",
+    "license": "MIT/Apache-2.0",
+    "file": "licenses/dependencies/cargo-bitflags-1.3.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "bitflags",
+    "version": "2.13.2",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-bitflags-2.13.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "block-buffer",
+    "version": "0.10.4",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-block-buffer-0.10.4.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "brotli-decompressor",
+    "version": "5.0.3",
+    "license": "BSD-3-Clause/MIT",
+    "file": "licenses/dependencies/cargo-brotli-decompressor-5.0.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "brotli",
+    "version": "8.0.4",
+    "license": "BSD-3-Clause AND MIT",
+    "file": "licenses/dependencies/cargo-brotli-8.0.4.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "bs58",
+    "version": "0.5.1",
+    "license": "MIT/Apache-2.0",
+    "file": "licenses/dependencies/cargo-bs58-0.5.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "bumpalo",
+    "version": "3.20.3",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-bumpalo-3.20.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "byteorder",
+    "version": "1.5.0",
+    "license": "Unlicense OR MIT",
+    "file": "licenses/dependencies/cargo-byteorder-1.5.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "bytes",
+    "version": "1.12.1",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-bytes-1.12.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "camino",
+    "version": "1.2.6",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-camino-1.2.6.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "cargo_metadata",
+    "version": "0.19.2",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-cargo_metadata-0.19.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "cargo_toml",
+    "version": "0.22.3",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-cargo_toml-0.22.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "cargo-platform",
+    "version": "0.1.9",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-cargo-platform-0.1.9.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "cc",
+    "version": "1.4.6",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-cc-1.4.6.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "cfb",
+    "version": "0.7.3",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-cfb-0.7.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "cfg-if",
+    "version": "1.0.4",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-cfg-if-1.0.4.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "chrono",
+    "version": "0.4.45",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-chrono-0.4.45.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "cookie",
+    "version": "0.18.2",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-cookie-0.18.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "cpufeatures",
+    "version": "0.2.17",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-cpufeatures-0.2.17.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "crc32fast",
+    "version": "1.5.2",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-crc32fast-1.5.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "crossbeam-channel",
+    "version": "0.5.17",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-crossbeam-channel-0.5.17.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "crossbeam-utils",
+    "version": "0.8.23",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-crossbeam-utils-0.8.23.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "crypto-common",
+    "version": "0.1.7",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-crypto-common-0.1.7.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "cssparser-macros",
+    "version": "0.6.1",
+    "license": "MPL-2.0",
+    "file": "licenses/dependencies/cargo-cssparser-macros-0.6.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "cssparser",
+    "version": "0.36.0",
+    "license": "MPL-2.0",
+    "file": "licenses/dependencies/cargo-cssparser-0.36.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "ctor-proc-macro",
+    "version": "0.0.7",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-ctor-proc-macro-0.0.7.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "ctor",
+    "version": "0.8.0",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-ctor-0.8.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "darling_core",
+    "version": "0.24.1",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-darling_core-0.24.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "darling_macro",
+    "version": "0.24.1",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-darling_macro-0.24.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "darling",
+    "version": "0.24.1",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-darling-0.24.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "defmt-macros",
+    "version": "1.1.1",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-defmt-macros-1.1.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "defmt-parser",
+    "version": "1.0.0",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-defmt-parser-1.0.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "defmt",
+    "version": "1.1.1",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-defmt-1.1.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "deranged",
+    "version": "0.5.8",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-deranged-0.5.8.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "derive_more-impl",
+    "version": "2.1.1",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-derive_more-impl-2.1.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "derive_more",
+    "version": "2.1.1",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-derive_more-2.1.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "digest",
+    "version": "0.10.7",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-digest-0.10.7.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "dirs-sys",
+    "version": "0.5.0",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-dirs-sys-0.5.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "dirs",
+    "version": "6.0.0",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-dirs-6.0.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "displaydoc",
+    "version": "0.2.7",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-displaydoc-0.2.7.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "dom_query",
+    "version": "0.27.0",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-dom_query-0.27.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "dpi",
+    "version": "0.1.2",
+    "license": "Apache-2.0 AND MIT",
+    "file": "licenses/dependencies/cargo-dpi-0.1.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "dtoa-short",
+    "version": "0.3.5",
+    "license": "MPL-2.0",
+    "file": "licenses/dependencies/cargo-dtoa-short-0.3.5.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "dtoa",
+    "version": "1.0.11",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-dtoa-1.0.11.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "dtor-proc-macro",
+    "version": "0.0.6",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-dtor-proc-macro-0.0.6.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "dtor",
+    "version": "0.3.0",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-dtor-0.3.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "dunce",
+    "version": "1.0.5",
+    "license": "CC0-1.0 OR MIT-0 OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-dunce-1.0.5.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "dyn-clone",
+    "version": "1.0.20",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-dyn-clone-1.0.20.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "embed-resource",
+    "version": "3.0.11",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-embed-resource-3.0.11.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "equivalent",
+    "version": "1.0.2",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-equivalent-1.0.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "erased-serde",
+    "version": "0.4.10",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-erased-serde-0.4.10.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "fastrand",
+    "version": "2.5.0",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-fastrand-2.5.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "fdeflate",
+    "version": "0.3.7",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-fdeflate-0.3.7.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "find-msvc-tools",
+    "version": "0.1.12",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-find-msvc-tools-0.1.12.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "flate2",
+    "version": "1.1.10",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-flate2-1.1.10.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "fnv",
+    "version": "1.0.7",
+    "license": "Apache-2.0 / MIT",
+    "file": "licenses/dependencies/cargo-fnv-1.0.7.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "foldhash",
+    "version": "0.2.0",
+    "license": "Zlib",
+    "file": "licenses/dependencies/cargo-foldhash-0.2.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "form_urlencoded",
+    "version": "1.2.2",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-form_urlencoded-1.2.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "futures-channel",
+    "version": "0.3.34",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-futures-channel-0.3.34.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "futures-core",
+    "version": "0.3.34",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-futures-core-0.3.34.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "futures-io",
+    "version": "0.3.34",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-futures-io-0.3.34.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "futures-macro",
+    "version": "0.3.34",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-futures-macro-0.3.34.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "futures-sink",
+    "version": "0.3.34",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-futures-sink-0.3.34.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "futures-task",
+    "version": "0.3.34",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-futures-task-0.3.34.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "futures-util",
+    "version": "0.3.34",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-futures-util-0.3.34.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "generic-array",
+    "version": "0.14.7",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-generic-array-0.14.7.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "getrandom",
+    "version": "0.3.4",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-getrandom-0.3.4.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "getrandom",
+    "version": "0.4.3",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-getrandom-0.4.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "glob",
+    "version": "0.3.4",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-glob-0.3.4.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "hashbrown",
+    "version": "0.12.3",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-hashbrown-0.12.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "hashbrown",
+    "version": "0.17.1",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-hashbrown-0.17.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "heck",
+    "version": "0.5.0",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-heck-0.5.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "hex",
+    "version": "0.4.3",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-hex-0.4.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "html5ever",
+    "version": "0.38.0",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-html5ever-0.38.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "http-body-util",
+    "version": "0.1.5",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-http-body-util-0.1.5.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "http-body",
+    "version": "1.1.0",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-http-body-1.1.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "http",
+    "version": "1.5.0",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-http-1.5.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "httparse",
+    "version": "1.10.1",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-httparse-1.10.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "hyper-tls",
+    "version": "0.6.0",
+    "license": "MIT/Apache-2.0",
+    "file": "licenses/dependencies/cargo-hyper-tls-0.6.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "hyper-util",
+    "version": "0.1.20",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-hyper-util-0.1.20.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "hyper",
+    "version": "1.11.1",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-hyper-1.11.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "ico",
+    "version": "0.5.0",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-ico-0.5.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "icu_collections",
+    "version": "2.3.0",
+    "license": "Unicode-3.0",
+    "file": "licenses/dependencies/cargo-icu_collections-2.3.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "icu_locale_core",
+    "version": "2.3.0",
+    "license": "Unicode-3.0",
+    "file": "licenses/dependencies/cargo-icu_locale_core-2.3.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "icu_normalizer_data",
+    "version": "2.3.0",
+    "license": "Unicode-3.0",
+    "file": "licenses/dependencies/cargo-icu_normalizer_data-2.3.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "icu_normalizer",
+    "version": "2.3.0",
+    "license": "Unicode-3.0",
+    "file": "licenses/dependencies/cargo-icu_normalizer-2.3.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "icu_properties_data",
+    "version": "2.3.0",
+    "license": "Unicode-3.0",
+    "file": "licenses/dependencies/cargo-icu_properties_data-2.3.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "icu_properties",
+    "version": "2.3.0",
+    "license": "Unicode-3.0",
+    "file": "licenses/dependencies/cargo-icu_properties-2.3.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "icu_provider",
+    "version": "2.3.1",
+    "license": "Unicode-3.0",
+    "file": "licenses/dependencies/cargo-icu_provider-2.3.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "ident_case",
+    "version": "1.0.1",
+    "license": "MIT/Apache-2.0",
+    "file": "licenses/dependencies/cargo-ident_case-1.0.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "idna_adapter",
+    "version": "1.2.2",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-idna_adapter-1.2.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "idna",
+    "version": "1.1.0",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-idna-1.1.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "indexmap",
+    "version": "1.9.3",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-indexmap-1.9.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "indexmap",
+    "version": "2.14.2",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-indexmap-2.14.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "infer",
+    "version": "0.19.0",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-infer-0.19.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "ipnet",
+    "version": "2.12.2",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-ipnet-2.12.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "itoa",
+    "version": "1.0.18",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-itoa-1.0.18.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "jiff-core",
+    "version": "0.1.1",
+    "license": "Unlicense OR MIT",
+    "file": "licenses/dependencies/cargo-jiff-core-0.1.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "jiff-tzdb-platform",
+    "version": "0.1.3",
+    "license": "Unlicense OR MIT",
+    "file": "licenses/dependencies/cargo-jiff-tzdb-platform-0.1.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "jiff-tzdb",
+    "version": "0.1.8",
+    "license": "Unlicense OR MIT",
+    "file": "licenses/dependencies/cargo-jiff-tzdb-0.1.8.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "jiff",
+    "version": "0.2.37",
+    "license": "Unlicense OR MIT",
+    "file": "licenses/dependencies/cargo-jiff-0.2.37.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "json-patch",
+    "version": "3.0.1",
+    "license": "MIT/Apache-2.0",
+    "file": "licenses/dependencies/cargo-json-patch-3.0.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "jsonptr",
+    "version": "0.6.3",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-jsonptr-0.6.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "keyboard-types",
+    "version": "0.7.0",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-keyboard-types-0.7.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "libc",
+    "version": "0.2.189",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-libc-0.2.189.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "litemap",
+    "version": "0.8.3",
+    "license": "Unicode-3.0",
+    "file": "licenses/dependencies/cargo-litemap-0.8.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "lock_api",
+    "version": "0.4.14",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-lock_api-0.4.14.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "log",
+    "version": "0.4.34",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-log-0.4.34.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "markup5ever",
+    "version": "0.38.0",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-markup5ever-0.38.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "memchr",
+    "version": "2.8.3",
+    "license": "Unlicense OR MIT",
+    "file": "licenses/dependencies/cargo-memchr-2.8.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "mime",
+    "version": "0.3.17",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-mime-0.3.17.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "miniz_oxide",
+    "version": "0.8.9",
+    "license": "MIT OR Zlib OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-miniz_oxide-0.8.9.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "miniz_oxide",
+    "version": "0.9.1",
+    "license": "MIT OR Zlib OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-miniz_oxide-0.9.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "mio",
+    "version": "1.2.3",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-mio-1.2.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "muda",
+    "version": "0.19.3",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-muda-0.19.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "native-tls",
+    "version": "0.2.18",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-native-tls-0.2.18.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "new_debug_unreachable",
+    "version": "1.0.6",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-new_debug_unreachable-1.0.6.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "num-conv",
+    "version": "0.2.2",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-num-conv-0.2.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "num-traits",
+    "version": "0.2.19",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-num-traits-0.2.19.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "once_cell",
+    "version": "1.21.4",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-once_cell-1.21.4.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "option-ext",
+    "version": "0.2.0",
+    "license": "MPL-2.0",
+    "file": "licenses/dependencies/cargo-option-ext-0.2.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "parking_lot_core",
+    "version": "0.9.12",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-parking_lot_core-0.9.12.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "parking_lot",
+    "version": "0.12.5",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-parking_lot-0.12.5.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "percent-encoding",
+    "version": "2.3.2",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-percent-encoding-2.3.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "phf_codegen",
+    "version": "0.13.1",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-phf_codegen-0.13.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "phf_generator",
+    "version": "0.13.1",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-phf_generator-0.13.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "phf_macros",
+    "version": "0.13.1",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-phf_macros-0.13.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "phf_shared",
+    "version": "0.13.1",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-phf_shared-0.13.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "phf",
+    "version": "0.13.1",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-phf-0.13.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "pin-project-lite",
+    "version": "0.2.17",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-pin-project-lite-0.2.17.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "plist",
+    "version": "1.10.1",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-plist-1.10.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "png",
+    "version": "0.17.16",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-png-0.17.16.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "potential_utf",
+    "version": "0.1.6",
+    "license": "Unicode-3.0",
+    "file": "licenses/dependencies/cargo-potential_utf-0.1.6.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "powerfmt",
+    "version": "0.2.0",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-powerfmt-0.2.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "precomputed-hash",
+    "version": "0.1.1",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-precomputed-hash-0.1.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "proc-macro2",
+    "version": "1.0.107",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-proc-macro2-1.0.107.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "quick-xml",
+    "version": "0.42.0",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-quick-xml-0.42.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "quote",
+    "version": "1.0.47",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-quote-1.0.47.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "raw-window-handle",
+    "version": "0.6.2",
+    "license": "MIT OR Apache-2.0 OR Zlib",
+    "file": "licenses/dependencies/cargo-raw-window-handle-0.6.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "ref-cast-impl",
+    "version": "1.0.27",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-ref-cast-impl-1.0.27.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "ref-cast",
+    "version": "1.0.27",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-ref-cast-1.0.27.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "regex-automata",
+    "version": "0.4.18",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-regex-automata-0.4.18.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "regex-syntax",
+    "version": "0.8.11",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-regex-syntax-0.8.11.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "regex",
+    "version": "1.13.1",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-regex-1.13.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "reqwest",
+    "version": "0.13.5",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-reqwest-0.13.5.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "rfd",
+    "version": "0.16.0",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-rfd-0.16.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "rustc_version",
+    "version": "0.4.1",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-rustc_version-0.4.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "rustc-hash",
+    "version": "2.1.3",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-rustc-hash-2.1.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "rustls-pki-types",
+    "version": "1.15.1",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-rustls-pki-types-1.15.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "same-file",
+    "version": "1.0.6",
+    "license": "Unlicense/MIT",
+    "file": "licenses/dependencies/cargo-same-file-1.0.6.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "schannel",
+    "version": "0.1.29",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-schannel-0.1.29.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "schemars_derive",
+    "version": "0.8.22",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-schemars_derive-0.8.22.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "schemars",
+    "version": "0.8.22",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-schemars-0.8.22.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "schemars",
+    "version": "0.9.0",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-schemars-0.9.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "schemars",
+    "version": "1.2.2",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-schemars-1.2.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "scopeguard",
+    "version": "1.2.0",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-scopeguard-1.2.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "selectors",
+    "version": "0.36.1",
+    "license": "MPL-2.0",
+    "file": "licenses/dependencies/cargo-selectors-0.36.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "semver",
+    "version": "1.0.28",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-semver-1.0.28.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "serde_core",
+    "version": "1.0.229",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-serde_core-1.0.229.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "serde_derive_internals",
+    "version": "0.29.1",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-serde_derive_internals-0.29.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "serde_derive",
+    "version": "1.0.229",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-serde_derive-1.0.229.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "serde_json",
+    "version": "1.0.151",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-serde_json-1.0.151.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "serde_repr",
+    "version": "0.1.21",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-serde_repr-0.1.21.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "serde_spanned",
+    "version": "1.1.1",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-serde_spanned-1.1.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "serde_with_macros",
+    "version": "3.23.0",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-serde_with_macros-3.23.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "serde_with",
+    "version": "3.23.0",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-serde_with-3.23.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "serde-untagged",
+    "version": "0.1.9",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-serde-untagged-0.1.9.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "serde",
+    "version": "1.0.229",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-serde-1.0.229.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "serialize-to-javascript-impl",
+    "version": "0.1.2",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-serialize-to-javascript-impl-0.1.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "serialize-to-javascript",
+    "version": "0.1.2",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-serialize-to-javascript-0.1.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "servo_arc",
+    "version": "0.4.3",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-servo_arc-0.4.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "sha2",
+    "version": "0.10.9",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-sha2-0.10.9.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "shlex",
+    "version": "2.0.1",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-shlex-2.0.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "simd-adler32",
+    "version": "0.3.10",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-simd-adler32-0.3.10.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "siphasher",
+    "version": "1.0.3",
+    "license": "MIT/Apache-2.0",
+    "file": "licenses/dependencies/cargo-siphasher-1.0.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "slab",
+    "version": "0.4.12",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-slab-0.4.12.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "smallvec",
+    "version": "1.16.1",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-smallvec-1.16.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "socket2",
+    "version": "0.6.5",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-socket2-0.6.5.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "softbuffer",
+    "version": "0.4.8",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-softbuffer-0.4.8.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "stable_deref_trait",
+    "version": "1.2.1",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-stable_deref_trait-1.2.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "string_cache_codegen",
+    "version": "0.6.1",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-string_cache_codegen-0.6.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "string_cache",
+    "version": "0.9.0",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-string_cache-0.9.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "strsim",
+    "version": "0.11.1",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-strsim-0.11.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "syn",
+    "version": "2.0.119",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-syn-2.0.119.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "syn",
+    "version": "3.0.5",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-syn-3.0.5.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "sync_wrapper",
+    "version": "1.0.2",
+    "license": "Apache-2.0",
+    "file": "licenses/dependencies/cargo-sync_wrapper-1.0.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "synstructure",
+    "version": "0.14.0",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-synstructure-0.14.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tao",
+    "version": "0.35.3",
+    "license": "Apache-2.0",
+    "file": "licenses/dependencies/cargo-tao-0.35.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tauri-build",
+    "version": "2.6.3",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-tauri-build-2.6.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tauri-codegen",
+    "version": "2.6.3",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-tauri-codegen-2.6.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tauri-macros",
+    "version": "2.6.3",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-tauri-macros-2.6.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tauri-plugin-dialog",
+    "version": "2.7.3",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-tauri-plugin-dialog-2.7.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tauri-plugin-fs",
+    "version": "2.5.2",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-tauri-plugin-fs-2.5.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tauri-plugin-single-instance",
+    "version": "2.4.4",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-tauri-plugin-single-instance-2.4.4.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tauri-plugin",
+    "version": "2.6.3",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-tauri-plugin-2.6.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tauri-runtime-wry",
+    "version": "2.11.4",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-tauri-runtime-wry-2.11.4.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tauri-runtime",
+    "version": "2.11.3",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-tauri-runtime-2.11.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tauri-utils",
+    "version": "2.9.3",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-tauri-utils-2.9.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tauri-winres",
+    "version": "0.3.6",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-tauri-winres-0.3.6.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tauri",
+    "version": "2.11.5",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-tauri-2.11.5.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tendril",
+    "version": "0.5.1",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-tendril-0.5.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "thiserror-impl",
+    "version": "1.0.69",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-thiserror-impl-1.0.69.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "thiserror-impl",
+    "version": "2.0.20",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-thiserror-impl-2.0.20.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "thiserror",
+    "version": "1.0.69",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-thiserror-1.0.69.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "thiserror",
+    "version": "2.0.20",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-thiserror-2.0.20.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "time-core",
+    "version": "0.1.9",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-time-core-0.1.9.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "time-macros",
+    "version": "0.2.32",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-time-macros-0.2.32.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "time",
+    "version": "0.3.55",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-time-0.3.55.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tinystr",
+    "version": "0.8.4",
+    "license": "Unicode-3.0",
+    "file": "licenses/dependencies/cargo-tinystr-0.8.4.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tinyvec",
+    "version": "1.13.3",
+    "license": "Zlib OR Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-tinyvec-1.13.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tokio-native-tls",
+    "version": "0.3.1",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-tokio-native-tls-0.3.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tokio-util",
+    "version": "0.7.19",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-tokio-util-0.7.19.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tokio",
+    "version": "1.53.1",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-tokio-1.53.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "toml_datetime",
+    "version": "0.7.5+spec-1.1.0",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-toml_datetime-0.7.5+spec-1.1.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "toml_datetime",
+    "version": "1.1.1+spec-1.1.0",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-toml_datetime-1.1.1+spec-1.1.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "toml_parser",
+    "version": "1.1.3+spec-1.1.0",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-toml_parser-1.1.3+spec-1.1.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "toml_writer",
+    "version": "1.1.2+spec-1.1.0",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-toml_writer-1.1.2+spec-1.1.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "toml",
+    "version": "0.9.12+spec-1.1.0",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-toml-0.9.12+spec-1.1.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "toml",
+    "version": "1.1.6+spec-1.1.0",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-toml-1.1.6+spec-1.1.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tower-http",
+    "version": "0.6.11",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-tower-http-0.6.11.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tower-layer",
+    "version": "0.3.3",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-tower-layer-0.3.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tower-service",
+    "version": "0.3.3",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-tower-service-0.3.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tower",
+    "version": "0.5.3",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-tower-0.5.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tracing-attributes",
+    "version": "0.1.31",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-tracing-attributes-0.1.31.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tracing-core",
+    "version": "0.1.36",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-tracing-core-0.1.36.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tracing",
+    "version": "0.1.44",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-tracing-0.1.44.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "tray-icon",
+    "version": "0.24.2",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-tray-icon-0.24.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "try-lock",
+    "version": "0.2.5",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-try-lock-0.2.5.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "typed-path",
+    "version": "0.12.3",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-typed-path-0.12.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "typeid",
+    "version": "1.0.3",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-typeid-1.0.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "typenum",
+    "version": "1.20.1",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-typenum-1.20.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "unic-char-property",
+    "version": "0.9.0",
+    "license": "MIT/Apache-2.0",
+    "file": "licenses/dependencies/cargo-unic-char-property-0.9.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "unic-char-range",
+    "version": "0.9.0",
+    "license": "MIT/Apache-2.0",
+    "file": "licenses/dependencies/cargo-unic-char-range-0.9.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "unic-common",
+    "version": "0.9.0",
+    "license": "MIT/Apache-2.0",
+    "file": "licenses/dependencies/cargo-unic-common-0.9.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "unic-ucd-ident",
+    "version": "0.9.0",
+    "license": "MIT/Apache-2.0",
+    "file": "licenses/dependencies/cargo-unic-ucd-ident-0.9.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "unic-ucd-version",
+    "version": "0.9.0",
+    "license": "MIT/Apache-2.0",
+    "file": "licenses/dependencies/cargo-unic-ucd-version-0.9.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "unicode-ident",
+    "version": "1.0.24",
+    "license": "(MIT OR Apache-2.0) AND Unicode-3.0",
+    "file": "licenses/dependencies/cargo-unicode-ident-1.0.24.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "unicode-segmentation",
+    "version": "1.13.3",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-unicode-segmentation-1.13.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "url",
+    "version": "2.5.8",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-url-2.5.8.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "urlpattern",
+    "version": "0.3.0",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-urlpattern-0.3.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "utf8_iter",
+    "version": "1.0.4",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-utf8_iter-1.0.4.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "uuid",
+    "version": "1.26.1",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-uuid-1.26.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "version_check",
+    "version": "0.9.5",
+    "license": "MIT/Apache-2.0",
+    "file": "licenses/dependencies/cargo-version_check-0.9.5.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "vswhom-sys",
+    "version": "0.1.3",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-vswhom-sys-0.1.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "vswhom",
+    "version": "0.1.0",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-vswhom-0.1.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "walkdir",
+    "version": "2.5.0",
+    "license": "Unlicense/MIT",
+    "file": "licenses/dependencies/cargo-walkdir-2.5.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "want",
+    "version": "0.3.1",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-want-0.3.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "web_atoms",
+    "version": "0.2.6",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-web_atoms-0.2.6.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "webview2-com-macros",
+    "version": "0.8.1",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-webview2-com-macros-0.8.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "webview2-com-sys",
+    "version": "0.38.2",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-webview2-com-sys-0.38.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "webview2-com",
+    "version": "0.38.2",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-webview2-com-0.38.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "winapi-util",
+    "version": "0.1.11",
+    "license": "Unlicense OR MIT",
+    "file": "licenses/dependencies/cargo-winapi-util-0.1.11.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "window-vibrancy",
+    "version": "0.6.0",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-window-vibrancy-0.6.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "windows_x86_64_msvc",
+    "version": "0.52.6",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-windows_x86_64_msvc-0.52.6.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "windows_x86_64_msvc",
+    "version": "0.53.1",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-windows_x86_64_msvc-0.53.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "windows-collections",
+    "version": "0.2.0",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-windows-collections-0.2.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "windows-core",
+    "version": "0.61.2",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-windows-core-0.61.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "windows-future",
+    "version": "0.2.1",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-windows-future-0.2.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "windows-implement",
+    "version": "0.60.2",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-windows-implement-0.60.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "windows-interface",
+    "version": "0.59.3",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-windows-interface-0.59.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "windows-link",
+    "version": "0.1.3",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-windows-link-0.1.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "windows-link",
+    "version": "0.2.1",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-windows-link-0.2.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "windows-numerics",
+    "version": "0.2.0",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-windows-numerics-0.2.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "windows-result",
+    "version": "0.3.4",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-windows-result-0.3.4.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "windows-strings",
+    "version": "0.4.2",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-windows-strings-0.4.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "windows-sys",
+    "version": "0.59.0",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-windows-sys-0.59.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "windows-sys",
+    "version": "0.60.2",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-windows-sys-0.60.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "windows-sys",
+    "version": "0.61.2",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-windows-sys-0.61.2.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "windows-targets",
+    "version": "0.52.6",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-windows-targets-0.52.6.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "windows-targets",
+    "version": "0.53.5",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-windows-targets-0.53.5.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "windows-threading",
+    "version": "0.1.0",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-windows-threading-0.1.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "windows-version",
+    "version": "0.1.7",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-windows-version-0.1.7.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "windows",
+    "version": "0.61.3",
+    "license": "MIT OR Apache-2.0",
+    "file": "licenses/dependencies/cargo-windows-0.61.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "winnow",
+    "version": "0.7.15",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-winnow-0.7.15.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "winnow",
+    "version": "1.0.4",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-winnow-1.0.4.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "winreg",
+    "version": "0.55.0",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-winreg-0.55.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "writeable",
+    "version": "0.6.4",
+    "license": "Unicode-3.0",
+    "file": "licenses/dependencies/cargo-writeable-0.6.4.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "wry",
+    "version": "0.55.1",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-wry-0.55.1.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "yoke-derive",
+    "version": "0.8.3",
+    "license": "Unicode-3.0",
+    "file": "licenses/dependencies/cargo-yoke-derive-0.8.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "yoke",
+    "version": "0.8.3",
+    "license": "Unicode-3.0",
+    "file": "licenses/dependencies/cargo-yoke-0.8.3.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "zerofrom-derive",
+    "version": "0.1.8",
+    "license": "Unicode-3.0",
+    "file": "licenses/dependencies/cargo-zerofrom-derive-0.1.8.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "zerofrom",
+    "version": "0.1.8",
+    "license": "Unicode-3.0",
+    "file": "licenses/dependencies/cargo-zerofrom-0.1.8.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "zeroize",
+    "version": "1.9.0",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/cargo-zeroize-1.9.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "zerotrie",
+    "version": "0.2.5",
+    "license": "Unicode-3.0",
+    "file": "licenses/dependencies/cargo-zerotrie-0.2.5.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "zerovec-derive",
+    "version": "0.11.6",
+    "license": "Unicode-3.0",
+    "file": "licenses/dependencies/cargo-zerovec-derive-0.11.6.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "zerovec",
+    "version": "0.11.8",
+    "license": "Unicode-3.0",
+    "file": "licenses/dependencies/cargo-zerovec-0.11.8.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "zip",
+    "version": "8.6.0",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-zip-8.6.0.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "zlib-rs",
+    "version": "0.6.8",
+    "license": "Zlib",
+    "file": "licenses/dependencies/cargo-zlib-rs-0.6.8.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "zmij",
+    "version": "1.0.23",
+    "license": "MIT",
+    "file": "licenses/dependencies/cargo-zmij-1.0.23.txt"
+  },
+  {
+    "kind": "cargo",
+    "name": "zopfli",
+    "version": "0.8.3",
+    "license": "Apache-2.0",
+    "file": "licenses/dependencies/cargo-zopfli-0.8.3.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "@babel/runtime",
+    "version": "8.0.5",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-_babel_runtime-8.0.5.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "@codemirror/autocomplete",
+    "version": "6.20.3",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-_codemirror_autocomplete-6.20.3.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "@codemirror/commands",
+    "version": "6.11.0",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-_codemirror_commands-6.11.0.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "@codemirror/lang-css",
+    "version": "6.3.1",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-_codemirror_lang-css-6.3.1.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "@codemirror/lang-html",
+    "version": "6.4.12",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-_codemirror_lang-html-6.4.12.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "@codemirror/lang-javascript",
+    "version": "6.2.5",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-_codemirror_lang-javascript-6.2.5.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "@codemirror/language",
+    "version": "6.12.4",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-_codemirror_language-6.12.4.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "@codemirror/lint",
+    "version": "6.9.7",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-_codemirror_lint-6.9.7.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "@codemirror/search",
+    "version": "6.7.2",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-_codemirror_search-6.7.2.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "@codemirror/state",
+    "version": "6.7.4",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-_codemirror_state-6.7.4.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "@codemirror/theme-one-dark",
+    "version": "6.1.3",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-_codemirror_theme-one-dark-6.1.3.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "@codemirror/view",
+    "version": "6.38.0",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-_codemirror_view-6.38.0.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "@codemirror/view",
+    "version": "6.43.11",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-_codemirror_view-6.43.11.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "@lezer/common",
+    "version": "1.5.2",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-_lezer_common-1.5.2.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "@lezer/css",
+    "version": "1.3.6",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-_lezer_css-1.3.6.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "@lezer/highlight",
+    "version": "1.2.3",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-_lezer_highlight-1.2.3.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "@lezer/html",
+    "version": "1.3.13",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-_lezer_html-1.3.13.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "@lezer/javascript",
+    "version": "1.5.4",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-_lezer_javascript-1.5.4.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "@lezer/lr",
+    "version": "1.4.10",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-_lezer_lr-1.4.10.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "@marijn/find-cluster-break",
+    "version": "1.0.4",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-_marijn_find-cluster-break-1.0.4.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "@tauri-apps/api",
+    "version": "2.11.1",
+    "license": "Apache-2.0 OR MIT",
+    "file": "licenses/dependencies/npm-_tauri-apps_api-2.11.1.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "@uiw/codemirror-extensions-basic-setup",
+    "version": "4.25.11",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-_uiw_codemirror-extensions-basic-setup-4.25.11.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "@uiw/react-codemirror",
+    "version": "4.25.11",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-_uiw_react-codemirror-4.25.11.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "codemirror",
+    "version": "6.0.2",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-codemirror-6.0.2.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "crelt",
+    "version": "1.0.7",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-crelt-1.0.7.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "entities",
+    "version": "6.0.1",
+    "license": "BSD-2-Clause",
+    "file": "licenses/dependencies/npm-entities-6.0.1.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "parse5",
+    "version": "7.3.0",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-parse5-7.3.0.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "react-dom",
+    "version": "19.3.0",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-react-dom-19.3.0.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "react",
+    "version": "19.3.0",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-react-19.3.0.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "scheduler",
+    "version": "0.28.0",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-scheduler-0.28.0.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "style-mod",
+    "version": "4.1.3",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-style-mod-4.1.3.txt"
+  },
+  {
+    "kind": "npm",
+    "name": "w3c-keyname",
+    "version": "2.2.8",
+    "license": "MIT",
+    "file": "licenses/dependencies/npm-w3c-keyname-2.2.8.txt"
+  },
+  {
+    "kind": "vendor",
+    "name": "PHPMailer",
+    "version": "7.1.1",
+    "license": "LGPL-2.1-only",
+    "file": "licenses/dependencies/vendor-PHPMailer-7.1.1.txt"
+  },
+  {
+    "kind": "vendor",
+    "name": "qrcode-generator",
+    "version": "2.0.4",
+    "license": "MIT",
+    "file": "licenses/dependencies/vendor-qrcode-generator-2.0.4.txt"
+  }
+]

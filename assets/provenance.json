@@ -1,0 +1,51 @@
+[
+  {
+    "file": "public/hare/badge-rgb.png",
+    "source": "src/assets/vinny/badge-rgb.png",
+    "sha256": "F08AE22C92CA27E4BC7FF3697A0678B56430F0A6C3D5D28B1AC8CEC1A1EF3E7F"
+  },
+  {
+    "file": "public/hare/hello.png",
+    "source": "src/assets/vinny/hello.png",
+    "sha256": "FE24EC42F357451724D772B14589C9CF3011A81D8B55987757C7C5181DCC263F"
+  },
+  {
+    "file": "public/hare/investigating.png",
+    "source": "src/assets/vinny/investigating.png",
+    "sha256": "7D3B0E6F57BC9FAE2C6E48B56965C9ACB1FF6465AECD0EBA679B9EF80B327032"
+  },
+  {
+    "file": "public/hare/love.png",
+    "source": "src/assets/vinny/love.png",
+    "sha256": "97B13BC7BFB56C9FF00EC7D4620904F672E1F5072E958A8D7E12E531D6F1C5E6"
+  },
+  {
+    "file": "public/hare/ravitz-logo.png",
+    "source": "src/assets/ravitz-logo.png",
+    "sha256": "63234B81B0C5CE590946234753F3438614BB77F00D37E00CB64B199C7BCEEA81"
+  },
+  {
+    "file": "public/hare/hello.svg",
+    "source": "src/assets/vinny/dark/hello.svg",
+    "commit": "41b5615d84825597d81f0dda5ee3859cda4aecd8",
+    "sha256": "6A8DE45E9C8075CF433213A68F04BDB259CBC4CBD54EE21EACDE38F157EA80AF"
+  },
+  {
+    "file": "public/hare/investigating.svg",
+    "source": "src/assets/vinny/dark/investigating.svg",
+    "commit": "41b5615d84825597d81f0dda5ee3859cda4aecd8",
+    "sha256": "E6530618BCB2A26FB5BBCEB4F885B21B40A0B1F539BBA1CC67E5F1C9506B4775"
+  },
+  {
+    "file": "public/hare/love.svg",
+    "source": "src/assets/vinny/dark/love.svg",
+    "commit": "41b5615d84825597d81f0dda5ee3859cda4aecd8",
+    "sha256": "1C0CAD112A5ECDDD27485CC684DF644BC4334FAE181CC6F725D4BD4A705735B5"
+  },
+  {
+    "file": "public/hare/logo-no-words.svg",
+    "source": "src/assets/vinny/dark/logo-no-words.svg",
+    "commit": "41b5615d84825597d81f0dda5ee3859cda4aecd8",
+    "sha256": "DDB55ACDC372A821A1E987CE5035A2F088A23E8D8F402708A3D7C5CE566D1837"
+  }
+]

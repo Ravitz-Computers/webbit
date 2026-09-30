@@ -1,0 +1,12 @@
+{
+  "identifier": "default",
+  "description": "User-selected project files",
+  "windows": [
+    "main"
+  ],
+  "permissions": [
+    "core:default",
+    "core:window:allow-destroy",
+    "core:window:allow-minimize"
+  ]
+}
